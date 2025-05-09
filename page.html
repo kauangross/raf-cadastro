@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+    body{
+        font-family: cursive;
+
+        text-align: center;
+        margin-top: 10%;
+        form{
+            background-color: blanchedalmond;
+            display: inline-block;
+            padding: 40px;
+            margin: 0;
+            border-radius: 40px;
+
+            input{
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 5px;
+                border-radius: 20px;
+                display: block;
+            }
+
+            button{
+                margin: auto;
+                padding: 5px;
+                border-radius: 20px;
+                display: block;
+                background-color: rosybrown;
+                color: white;
+            }
+        }
+    }
+</style>
+<body>
+    <h1>Faça seu cadastro de namorada!</h1>
+
+    <form id="cadastro">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="senha" id="senha" placeholder="Senha" required>
+        <button type="submit">Cadastrar</button>
+    </form> 
+    
+    <div id="usuarios">
+        <h2>Seu nome é</h2>
+        <div id="nomeUsuario"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
